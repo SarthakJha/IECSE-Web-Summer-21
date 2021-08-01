@@ -1,0 +1,151 @@
+/*--------------Header-------------*/
+
+
+.logo{
+  width: 240px;
+  height: 240px;
+  margin: 20px;
+  border-radius: 5px;
+  float: left;
+}
+
+.album{
+  color: white;
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+}
+.artist{
+  color: white;
+  font-size: 16px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+}
+
+.name{
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  font-family:sans-serif
+}
+
+.duration{
+  color: white;
+  font-size: 20px;
+  margin:15px;
+  margin-top: 15px;
+}
+
+
+.temp{
+  border-radius: 50% ;
+  margin:0px 40px;
+  background-color: black;
+  border:none;
+
+
+}
+.play{
+  margin:10px;
+  width:20px;
+  height: 20px;
+
+}
+
+.right{
+  text-align: right;
+}
+/*------------------------------------------------*/
+
+/*-------Song List-------*/
+
+.mid{
+  font-size: 18px;
+  color: rgb(193, 189, 196);
+  text-align: center;
+}
+.main{
+  background: linear-gradient(180deg, rgba(1,1,1,0.9167017148656338) 0%, rgba(11,11,14,1) 35%, rgba(76,83,85,1) 100%);
+  overflow-x: hidden;
+}
+.song{
+  text-align: center;
+  padding: 10px 0px;
+
+}
+.song1{
+  color: rgb(193, 189, 196);
+}
+.song2{
+  color: green;
+}
+.play2{
+  width:15px;
+  height: 15px;
+  margin: 5px;
+}
+.temp2{
+  border-radius: 50% ;
+  background-color: rgb(10, 10, 10);
+  border:none;
+
+}
+a:hover{
+  cursor: pointer;
+}
+/*******************************/
+
+/*--------Responsiveness-------*/
+@media only screen and (max-width: 1000px) {
+  .name{
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .img,.logo{
+  float: none;
+  text-align: center;
+  }
+  .artist,.album{
+  text-align: center;
+
+  }
+  .mid,.col-lg-1{
+    visibility: hidden;
+  }
+  #title{
+    width: 70%;
+    text-align: center;
+  }
+  #play{
+    width: 15%;
+  }
+  #dur{
+    width: 10%;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #title{
+    width: 50%;
+    text-align: center;
+  }
+
+  #play{
+    width: 25%;
+  }
+  #dur{
+    width: 20%;
+    text-align: left;
+  }
+
+  .name{
+    font-size: 50px;
+  }
+
+
+}
