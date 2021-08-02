@@ -7,3 +7,5 @@
 -adding "currently playing" logic to footer player and update its name.
 
 -highlight the current song.
+
+-adding a play/pause flag.
