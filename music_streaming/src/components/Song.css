@@ -1,0 +1,45 @@
+.song_card {
+  display: flex;
+  width: 97%;
+  align-content: left;
+  background-color: rgb(32, 32, 32);
+  margin: 25px;
+  padding: 0px;
+  height: 100;
+  border-radius: 20px;
+  color: white;
+}
+.song_icon {
+  align-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+.song_info {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+
+}
+.duration {
+  font-size: 18px;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+.play {
+  align-content: right;
+  margin-top : auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+.like{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+    margin-right:1rem;
+}
+.play:hover,
+.play:hover {
+  transition: transform 0.2 ease-in;
+  transform: scale(1.2) !important;
+}
