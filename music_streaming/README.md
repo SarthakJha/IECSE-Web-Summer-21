@@ -4,7 +4,7 @@
 
 ## Tasks Left: 
 
--adding "currently playing" logic to footer player and update its name.
+-adding "currently playing" logic to footer player and updating song_name.
 
 -highlight the current song.
 
