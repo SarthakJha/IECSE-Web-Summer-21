@@ -1,5 +1,10 @@
-/*--------------Header-------------*/
+.main{
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(1,1,1,0.9167017148656338) 0%, rgba(11,11,14,1) 35%, rgba(76,83,85,1) 100%);
+  overflow-x: hidden;
+}
 
+/*--------------Header-------------*/
 
 .logo{
   width: 240px;
@@ -59,16 +64,35 @@
 }
 /*------------------------------------------------*/
 
+/*-------Search Bar------------------*/
+.search-main{
+  text-align: center;
+}
+.search{
+  background-color: transparent;
+  color: white;
+  border: 3px solid green;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 15px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+.icon{
+  color: green;
+  margin:5px 10px;
+
+}
+
+
+/*-----------------------------------------------*/
+
 /*-------Song List-------*/
 
 .mid{
   font-size: 18px;
   color: rgb(193, 189, 196);
   text-align: center;
-}
-.main{
-  background: linear-gradient(180deg, rgba(1,1,1,0.9167017148656338) 0%, rgba(11,11,14,1) 35%, rgba(76,83,85,1) 100%);
-  overflow-x: hidden;
 }
 .song{
   text-align: center;
@@ -109,6 +133,9 @@ a:hover{
   float: none;
   text-align: center;
   }
+  .search{
+    width: 60%;
+  }
   .artist,.album{
   text-align: center;
 
@@ -142,7 +169,9 @@ a:hover{
     width: 20%;
     text-align: left;
   }
-
+.search{
+  width: 80%;
+}
   .name{
     font-size: 50px;
   }

@@ -2,13 +2,20 @@ import "./App.css";
 import React, { Component } from "react";
 import Header from "./components/header.jsx";
 import Song from "./components/song.jsx";
+import Mid from "./components/mid.jsx";
+import SearchBar from "./components/search.jsx";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { headersong: "Hollywood's Bleeding", headerduration: "2:36" };
+    this.state = { 
+      headersong: "Hollywood's Bleeding", 
+      headerduration: "2:36",
+      searchField:''
+    };
     this.handler = this.handler.bind(this);
     this.items = [
       {
@@ -96,29 +103,24 @@ class App extends Component {
   }
 
   render() {
+    const filteredSongs= this.items.filter(item => (
+      item.title.toLowerCase().includes(this.state.searchField.toLowerCase())
+    ))
     return (
       <div className="main">
         <Header 
           songname={this.state.headersong}
           songduration={this.state.headerduration}
         />
-        <div className="row mid">
-          <div className="col-lg-1">
-              #
-          </div>
-          <div className="col-lg-6">
-              TITLE
-          </div>
-          <div className="col-lg-3">
-          Duration
-          </div>
-
-          <div>
-
-          </div>
-        </div>
-
-        {this.items.map((item) => (
+<SearchBar
+  handleChange={(e) => this.setState(
+    {searchField:e.target.value}
+  )}
+/>
+   
+    <Mid/>
+     {
+       this.state.searchField.length> 0 ? filteredSongs.length ? filteredSongs.map((item) => (
           <Song
             id={item.id}
             key={item.id}
@@ -127,7 +129,19 @@ class App extends Component {
             onClick={() => this.handler(item)}
             cname={item.title===this.state.headersong ? "song2": "song1"}
           />
-        ))}
+        )) : null : this.items.map((item) => (
+          <Song
+            id={item.id}
+            key={item.id}
+            title={item.title}
+            duration={item.duration}
+            onClick={() => this.handler(item)}
+            cname={item.title===this.state.headersong ? "song2": "song1"}
+          />
+        )) 
+        
+       
+        }
       </div>
     );
   }
