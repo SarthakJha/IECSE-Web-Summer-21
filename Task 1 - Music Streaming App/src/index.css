@@ -1,0 +1,25 @@
+* {
+  margin: 0 ; 
+}
+/* Making default vetical margin , zero */
+
+body::-webkit-scrollbar  /* hides the scroll bar but keeps the functionality */
+{
+  display: none;
+}
+
+
+body {
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

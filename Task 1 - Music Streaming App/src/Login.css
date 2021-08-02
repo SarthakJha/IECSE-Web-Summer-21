@@ -1,0 +1,24 @@
+#logo
+{
+    max-width: 75%;
+    height: auto;
+    
+}
+
+.login
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.login > a
+{
+    padding: 20px;
+    font-weight: 800;
+    background-color: #1db954;
+    border-radius: 99px;
+    color: white;
+    text-decoration: none;
+}
